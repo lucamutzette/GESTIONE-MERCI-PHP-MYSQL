@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+}
+
+:root{
+    --bluA: #004798;
+    --bluB: #3265FF;
+    --blueC: #4A9EFF;
+    --nero: #3a3a3a;
+    --font: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+
+}
+
+h1,h5{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-family: var(--font);
+}
+
+h5{
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+a{
+    text-decoration: none;
+}
+
+.page{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    /* position: absolute; */
+}
+
+.nome-pagina{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nome-pagina h1{
+    background: var(--bluA);
+    background: linear-gradient(to right, #0C1A61 0%, #5194B5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4vw;
+    padding-top: 50px;
+    box-sizing: content-box;
+    font-weight: 900;
+}
+
+.card-container{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    height: 80vh;
+    align-items: center;
+}
+
+.card-container a{
+    color: white;
+}
+
+
+.link-card{
+    max-width: 33%;
+    min-width: 300px;
+    width: 31%;
+    align-items: center;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    height: 100px;
+    align-content: center;
+
+}
+
+
+
+#card-1{
+    background-color: #004798;
+}
+
+#card-1:hover{
+    background-color: #004798d8;
+}
+
+#card-2{
+    background-color: #3265FF;
+}
+
+#card-2:hover{
+    background-color: #3265FFd8;
+}
+
+#card-3{
+    background-color: #4A9EFF;
+}
+
+#card-3:hover{
+    background-color: #4A9EFFd8;
+}
+

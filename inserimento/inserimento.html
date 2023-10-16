@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/inserimento-modifca.css">
+    <title>Inserimento</title>
+</head>
+<body>
+    <div class="page">
+        <div class="nav-bar">
+            <div class="titolo-container">
+                <h1>Inserimento</h1>
+            </div>
+
+            <div class="back-home-container">
+                <a href="../index.html"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#3a3a3a" viewBox="0 0 256 256"><path d="M128,20A108,108,0,1,0,236,128,108.12,108.12,0,0,0,128,20Zm0,192a84,84,0,1,1,84-84A84.09,84.09,0,0,1,128,212Zm52-84a12,12,0,0,1-12,12H117l11.52,11.51a12,12,0,0,1-17,17l-32-32a12,12,0,0,1,0-17l32-32a12,12,0,0,1,17,17L117,116h51A12,12,0,0,1,180,128Z"></path></svg>Torna alla home</a>
+            </div>
+        </div>
+        
+
+        <div class="form-container">
+            <form action="caricamento.php" method="post">
+                <input type="text" name="categoria" placeholder="Categoria" required>
+
+                <input type="text" name="descrizione" placeholder="Descrizione" required>
+
+                <input type="number" step=0.01 name="costo_unitario" placeholder="Costo Unitario" required>
+
+                <input type="number" step=1 name="quantita" placeholder="Quantita" required>
+
+                <input type="number" step=0.01 name="prezzo_vendita" placeholder="Prezzo Vendita" required>
+
+                <input type="submit" value="Invia">
+            </form>
+        </div>
+    </div>
+
+    <div class="notifica" id="notifica">
+        <h2>Inserimento riuscito</h2>
+    </div>
+
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        let inserimento = urlParams.get("inserimento");
+        let notifica = document.getElementById('notifica');
+        function hidden(){
+           notifica.style.visibility = "hidden";
+            
+            
+        }
+
+
+
+        if(inserimento=="t"){
+            notifica.style.visibility = "visible"
+            window.setTimeout(hidden, 3000)
+        }
+
+
+
+</script>
+
+</body>
+</html>

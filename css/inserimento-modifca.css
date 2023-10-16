@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+}
+
+:root{
+    --bluA: #004798;
+    --bluB: #3265FF;
+    --blueC: #4A9EFF;
+    --nero: #3a3a3a;
+    --font: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+
+}
+
+h1,h5{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-family: var(--font);
+}
+
+.nav-bar{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    /* margin: 20px 0; */
+    height: 10vh;
+    align-items: center;
+}
+
+.titolo-container{
+    width: 80%;
+    display: flex;
+    padding: 0 50px 0 0;
+    box-sizing: content-box;
+    justify-content: flex-end;
+}
+
+.back-home-container{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-home-container a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--nero);
+    font-family: var(--font);
+}
+
+.titolo-container h1{
+    color: var(--nero);
+    font-size: 4vw;
+    /* padding-top: 50px; */
+    box-sizing: content-box;
+    font-weight: 900;
+}
+
+.form-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* margin-top: 10vh; */
+    height: 90vh;
+    align-items: center;
+}
+
+.form-container form{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"], input[type="number"]{
+    margin: 10px 0;
+    padding: 10px 20px;
+    width: 40%;
+}
+
+input[type="submit"]{
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: var(--bluA);
+    color: white;
+    border: none;
+    width: 45%;
+}
+
+input[type="submit"]:hover{
+    background-color: var(--blueC);
+}
+
+label{
+    font-family: var(--font);
+    color: var(--nero);
+}
+
+
+.notifica{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: var(--nero);
+    width: 20vw;
+    height: 10vh;
+    display: flex;
+    z-index: 99;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.notifica h2{
+    color: white;
+    font-family: var(--font);
+    font-size: 1.5vw;
+
+}
